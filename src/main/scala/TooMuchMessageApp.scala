@@ -1,0 +1,3 @@
+object TooMuchMessageApp extends App {
+
+}

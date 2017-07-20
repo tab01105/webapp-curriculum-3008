@@ -1,0 +1,3 @@
+object MessageCountActorApp extends App {
+
+}
