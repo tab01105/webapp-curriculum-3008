@@ -21,8 +21,8 @@ class ReplyActor extends Actor {
 object ReplyActorApp extends App {
   val system = ActorSystem("actorStudy")
 
-  val replyActor1 = system.actorOf(Props[ReplyActor], "replyActor1")
-  val replyActor2 = system.actorOf(Props[ReplyActor], "replyActor2")
+  val replyActor1 = system.actorOf(Props[HeabyActor], "replyActor1")
+  val replyActor2 = system.actorOf(Props[HeabyActor], "replyActor2")
 
   replyActor1 ! Greet(replyActor2)
 
