@@ -18,7 +18,7 @@ class MyActor extends Actor {
 object MessageCountActorApp extends App {
   val system = ActorSystem("actorStudy")
 
-  val myActor = system.actorOf(Props[MyActor], "myActor")
+  val myActor = system.actorOf(Props[ReplyActor], "myActor")
 
   for (i <- 1 to 10000)
     myActor ! "send"
